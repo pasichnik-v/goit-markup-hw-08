@@ -1,0 +1,110 @@
+
+/* Футер */
+
+.footer {
+    background-color: var(--background-hero-footer);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+    &__container {
+    display: flex;
+    justify-content: space-between;
+}
+    &__wrap {
+ 
+}
+
+    &__logo-wrap {
+    margin-bottom: 20px;
+}
+}
+
+/* Адреса */
+
+.address {
+    /* margin-top: 20px; */
+    &__list {
+    margin: 0;
+    padding: 0;
+}
+    &__item {
+    margin-bottom: 9px;
+}
+    &__item:last-child {
+    margin-bottom: 0px;
+}
+    &__contacts {
+    text-decoration: none;
+    font-style: normal;
+    line-height: 1.71;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+    &__contacts--color-white {
+    color: var(--full-white-color);
+    
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
+}
+    
+}
+    &__contacts--color-grey {
+    color: var(--partial-white-color);
+    
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+}
+    
+/* Підписка */
+
+.subscribe {
+    
+    &__form {
+    display: flex;
+}
+
+    &__input {
+    width: 358px;
+    height: 50px;
+    margin: 0;
+    padding: 15px 16px 15px 16px;
+        font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--full-white-color);
+    background-color: transparent;
+    @include border (rgba(255, 255, 255, 0.3));
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}
+
+    &__input:placeholder {
+
+    color: var(--partial-white-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+}
+    &__button-block {
+    position: relative;
+}
+    &__button {
+    padding: 10px 62px 10px 29px;
+    margin-left: 12px;
+}
+
+    &__icon {
+    position: absolute;
+    right: 28px;
+    top: 50%;
+    fill: var(--full-white-color);
+    transform: translateY(-50%);
+    
+}
+   
+}

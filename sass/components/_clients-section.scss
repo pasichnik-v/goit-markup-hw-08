@@ -1,0 +1,48 @@
+/* Клієнти */
+
+.clients {
+&__title {
+    @extend .example__title;
+}    
+&__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+&__item-wrap {
+    display: flex;
+    margin-right: 30px;
+    width: 170px;
+    height: 92px;   
+}
+&__item-wrap:last-child {
+    margin-right: 0px;
+}
+
+&__link {
+    display: flex;
+    width: 170px;
+    height: 92px;
+    align-items: center;
+    justify-content: center;
+
+    @include border (var(--icon-color));
+    border-radius: 4%;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+&__logo {
+    fill: var(--icon-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+        .clients__link:hover &,
+        .clients__link:focus & {
+        fill: var(--accent-color);}
+}
+
+&__link:focus,
+&__link:hover {
+    @include border (var(--accent-color));
+    outline: 1px solid transparent;
+    border-radius: 4px;
+}
+    
+} 

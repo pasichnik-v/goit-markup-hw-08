@@ -1,0 +1,21 @@
+/* Logo header+footer */
+
+.logo {
+    text-decoration: none;
+    
+    &__text {
+    font-family: var(--secondary-font);
+    font-size: 26px;
+    line-height: 1.19;
+    font-weight: 700;
+}
+    &__text--blue {
+    color: var(--accent-color);
+}
+    &__text--black {
+    color: var(--black-color);  
+}
+    &__text--white {
+    color: var(--full-white-color);
+}
+}

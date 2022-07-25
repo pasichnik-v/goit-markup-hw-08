@@ -1,0 +1,21 @@
+body {
+    background-color: var(--base-background-color);
+    color: var(--primary-text-color);
+    font-family: var(--main-font), sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    
+}
+
+/* Секції */
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
