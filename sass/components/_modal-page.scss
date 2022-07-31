@@ -20,8 +20,8 @@
 
 .modal {
     position: absolute;
-    min-width: 528px;
-    min-height: 581px;
+    width: 94%;
+    min-height: 609px;
     padding: 40px;
     background-color: var(--full-white-color);
     top: 50%;
@@ -31,9 +31,21 @@
     box-shadow: 
     0px 4px 4px rgba(0, 0, 0, 0.25), 
     0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow-y: auto;
+
+    @media screen and (min-width: 480px) {
+    width: 450px;
+}
+
+    @media screen and (min-width: 1200px) {
+        min-width: 528px;
+        min-height: 581px;
+    
+}
 
         .backdrop.is-hidden & {
         transform: translate(-50%, -50%) scale(1.1);
+
 
 }
     &__title {
@@ -161,9 +173,13 @@
     justify-content: center;
     align-items: center;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.71;
     color: var(--secondary-text-color);
+    @media screen and (min-width:1200px) {
+        font-size: 14px;
+        
+    }
  }
 
     &__input {
