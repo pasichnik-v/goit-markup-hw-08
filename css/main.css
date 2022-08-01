@@ -297,6 +297,35 @@ body {
     display: flex;
   }
 }
+.menu-button {
+  position: absolute;
+  right: 10px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+@media screen and (min-width: 780px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+.menu-button .menu-button__icon-close {
+  display: none;
+}
+
+.menu-button.is-open .menu-button__icon-close {
+  display: block;
+}
+
+.menu-button.is-open .menu-button__icon-open {
+  display: none;
+}
+
 .contacts {
   display: none;
   font-weight: 500;
