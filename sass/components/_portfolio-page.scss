@@ -39,7 +39,7 @@
 }
 }
     
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 768px) {
     .filters {
         justify-content: center;
     }
@@ -74,7 +74,7 @@
     
     margin: 15px;
     width: 100%;
-    @media screen and (min-width: 780px) {
+    @media screen and (min-width: 768px) {
         width: calc((100% - 4 * 15px)/2);
         
     }
