@@ -135,19 +135,33 @@
             <ul class="list example__list">
                 <li class="example__item">
                     <div class="example__image-wrap">
-                        <a class="example__photo" href=""><img src="./images/box1.jpg" alt="бокс1" width="370"></a>
+                            <img
+                            srcset="
+                                ./images/box1_1x.jpg 1x,
+                                ./images/box1_2x.jpg 2x,
+                                ./images/box1_3x.jpg 3x"
+                            src="./images/box1_1x.jpg" alt="Бокс1" width="370">
                         <p class="example__text">Десктопні додатки</p>
                     </div>
                 </li>
                 <li class="example__item">
                     <div class="example__image-wrap">
-                        <a class="example__photo" href=""><img src="./images/box2.jpg" alt="бокс2" width="370"></a>
+                        <img srcset="
+                                ./images/box2_1x.jpg 1x,
+                                ./images/box2_2x.jpg 2x,
+                                ./images/box2_3x.jpg 3x" 
+                            src="./images/box2_1x.jpg" alt="Бокс1" width="370">
+                        </picture>
                         <p class="example__text">Мобільні додатки</p>
                     </div>
                 </li>
                 <li class="example__item">
                     <div class="example__image-wrap">
-                        <a class="example__photo" href=""><img src="./images/box3.jpg" alt="бокс3" width="370"></a>
+                        <img srcset="
+                                ./images/box3_1x.jpg 1x,
+                                ./images/box3_2x.jpg 2x,
+                                ./images/box3_3x.jpg 3x" 
+                            src="./images/box3_1x.jpg" alt="Бокс1" width="370">
                         <p class="example__text">Дизайнерські рішення</p>
                     </div>
                 </li>
@@ -159,8 +173,15 @@
             <h2 class="title team__title">Наша команда</h2>
             <ul class="team__list list">
                 <li class="team__link">
-                    <a href="">
-                        <img src="./images/Igor.jpg" alt="Игорь" width="270"></a>
+                    <picture>
+                        <source srcset="./images/team/igor_270_1x.jpg 1x, ./images/team/igor_270_2x.jpg 2x, ./images/team/igor_270_3x.jpg 3x"
+                            media="(min-width: 1200px)">
+                        <source srcset="./images/team/igor_354_1x.jpg 1x, ./images/team/igor_354_2x.jpg 2x, ./images/team/igor_354_3x.jpg 3x"
+                            media="(min-width: 768px)">
+                        <source srcset="./images/team/igor_450_1x.jpg 1x, ./images/team/igor_450_2x.jpg 2x, ./images/team/igor_450_3x.jpg 3x"
+                            media="(max-width: 767px)">
+                        <img src="./images/team/igor_450_1x.jpg" alt="Игорь Демьяненко" width="270">
+                    </picture>
                     <div class="team__card social">
                         <h3 class="team__name">Ігор Дем'яненко</h3>
                     <p class="team__profession">Product Designer</p>
@@ -197,8 +218,18 @@
                     </div>
                 </li>
                 <li class="team__link">
-                    <a href="">
-                        <img src="./images/Olga.jpg" alt="Ольга" width="270"></a>
+                    <picture>
+                        <source
+                            srcset="./images/team/olga_270_1x.jpg 1x, ./images/team/olga_270_2x.jpg 2x, ./images/team/olga_270_3x.jpg 3x"
+                            media="(min-width: 1200px)">
+                        <source
+                            srcset="./images/team/olga_354_1x.jpg 1x, ./images/team/olga_354_2x.jpg 2x, ./images/team/olga_354_3x.jpg 3x"
+                            media="(min-width: 768px)">
+                        <source
+                            srcset="./images/team/olga_450_1x.jpg 1x, ./images/team/olga_450_2x.jpg 2x, ./images/team/olga_450_3x.jpg 3x"
+                            media="(max-width: 767px)">
+                        <img src="./images/team/olga_450_1x.jpg" alt="Ольга" width="270">
+                    </picture>
                     <div class="team__card social">
                         <h3 class="team__name">Ольга Рєпіна</h3>
                     <p class="team__profession">Frontend Developer</p>
@@ -235,8 +266,18 @@
                     </div>
                 </li>
                 <li class="team__link">
-                    <a href="">
-                        <img src="./images/Mukolay.jpg" alt="Николай" width="270"></a>
+                    <picture>
+                        <source
+                            srcset="./images/team/mukola_270_1x.jpg 1x, ./images/team/mukola_270_2x.jpg 2x, ./images/team/mukola_270_3x.jpg 3x"
+                            media="(min-width: 1200px)">
+                        <source
+                            srcset="./images/team/mukola_354_1x.jpg 1x, ./images/team/mukola_354_2x.jpg 2x, ./images/team/mukola_354_3x.jpg 3x"
+                            media="(min-width: 768px)">
+                        <source
+                            srcset="./images/team/mukola_450_1x.jpg 1x, ./images/team/mukola_450_2x.jpg 2x, ./images/team/mukola_450_3x.jpg 3x"
+                            media="(max-width: 767px)">
+                        <img src="./images/team/mukola_450_1x.jpg" alt="Микола" width="270">
+                    </picture>
                     <div class="team__card social">
                         <h3 class="team__name">Микола Тарасов</h3>
                     <p class="team__profession">Marketing</p>
@@ -273,8 +314,18 @@
                     </div>
                 </li>
                 <li class="team__link">
-                    <a href="">
-                        <img src="./images/Muhaylo.jpg" alt="Михаил" width="270"></a>
+                    <picture>
+                        <source
+                            srcset="./images/team/muhaylo_270_1x.jpg 1x, ./images/team/muhaylo_270_2x.jpg 2x, ./images/team/muhaylo_270_3x.jpg 3x"
+                            media="(min-width: 1200px)">
+                        <source
+                            srcset="./images/team/muhaylo_354_1x.jpg 1x, ./images/team/muhaylo_354_2x.jpg 2x, ./images/team/muhaylo_354_3x.jpg 3x"
+                            media="(min-width: 768px)">
+                        <source
+                            srcset="./images/team/muhaylo_450_1x.jpg 1x, ./images/team/muhaylo_450_2x.jpg 2x, ./images/team/muhaylo_450_3x.jpg 3x"
+                            media="(max-width: 767px)">
+                        <img src="./images/team/muhaylo_450_1x.jpg" alt="Михайло" width="270">
+                    </picture>
                     <div class="team__card social">
                         <h3 class="team__name">Михайло Єрмаков</h3>
                     <p class="team__profession">UI Designer</p>
@@ -468,7 +519,9 @@
                         <svg class="chekbox__icon" aria-hidden="true" width="16px" height="15px">
                             <use class="use-icon-chek" href="./images/icons.svg#icon-check"></use>
                         </svg>
-                        <div>Погоджуюся з розсилкою та приймаю &nbsp; <a class="chekbox__terms-link" href="">Умови договору</a></div>
+                        <span>
+                            Погоджуюся з розсилкою та приймаю &nbsp; <a class="chekbox__terms-link" href="">Умови договору</a>
+                        </span>
                     </label>
                 </div>
                         

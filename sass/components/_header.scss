@@ -50,8 +50,8 @@
     border: none;
     background-color: transparent;
     
-    &:hover,
-    &:focus {
+    &:hover
+     {
         fill: var(--accent-color);
         cursor: pointer;
     }
